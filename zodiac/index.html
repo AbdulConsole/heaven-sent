@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Sign Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zodiac Sign Calculator</h1>
+        <div class="input-container">
+            <select id="month">
+                <option value="">MM</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <input type="number" id="day" maxlength="2" placeholder="DD" min="1" max="31">
+        </div>
+        <button id="calculate-btn">Calculate</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <p id="result"></p>
+            <button id="retry-btn">Clear & Retry</button>
+            <button id="read-more-btn">Read More About <span id="zodiac-name"></span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

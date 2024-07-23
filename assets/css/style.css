@@ -32,8 +32,6 @@ h1 {
 
 .content {
     flex-grow: 1;
-    /*margin-top: 80px; Adjust to match the height of the header */
-    /*margin-bottom: 60px; Adjust to match the height of the footer */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -64,7 +62,6 @@ h1 {
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
 }
 
 .project img {
@@ -80,7 +77,6 @@ h1 {
 }
 
 footer p {
-   
     margin: 0;
     color: #495057;
 }

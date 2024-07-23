@@ -1,0 +1,52 @@
+{
+    "zodiacDescriptions": [
+        {
+            "sign": "Aries",
+            "description": "Aries is the first sign of the zodiac, symbolized by the Ram. Aries are known for their courage, determination, and passion."
+        },
+        {
+            "sign": "Taurus",
+            "description": "Taurus is symbolized by the Bull. Taurus individuals are known for their reliability, patience, and practical nature."
+        },
+        {
+            "sign": "Gemini",
+            "description": "Gemini is symbolized by the Twins. Geminis are known for their adaptability, communication skills, and intellectual curiosity."
+        },
+        {
+            "sign": "Cancer",
+            "description": "Cancer is symbolized by the Crab. Cancerians are known for their emotional depth, empathy, and nurturing nature."
+        },
+        {
+            "sign": "Leo",
+            "description": "Leo is symbolized by the Lion. Leos are known for their confidence, charisma, and leadership qualities."
+        },
+        {
+            "sign": "Virgo",
+            "description": "Virgo is symbolized by the Maiden. Virgos are known for their analytical minds, attention to detail, and practicality."
+        },
+        {
+            "sign": "Libra",
+            "description": "Libra is symbolized by the Scales. Librans are known for their sense of fairness, diplomacy, and love of beauty."
+        },
+        {
+            "sign": "Scorpio",
+            "description": "Scorpio is symbolized by the Scorpion. Scorpios are known for their intensity, passion, and mysterious nature."
+        },
+        {
+            "sign": "Sagittarius",
+            "description": "Sagittarius is symbolized by the Archer. Sagittarians are known for their adventurous spirit, optimism, and love of freedom."
+        },
+        {
+            "sign": "Capricorn",
+            "description": "Capricorn is symbolized by the Goat. Capricorns are known for their discipline, ambition, and practicality."
+        },
+        {
+            "sign": "Aquarius",
+            "description": "Aquarius is symbolized by the Water Bearer. Aquarians are known for their innovation, independence, and humanitarian spirit."
+        },
+        {
+            "sign": "Pisces",
+            "description": "Pisces is symbolized by the Fish. Pisceans are known for their compassion, creativity, and intuitive nature."
+        }
+    ]
+}

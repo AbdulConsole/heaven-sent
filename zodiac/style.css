@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, rgba(252,254,255,1) 0%, rgba(218,227,237,1) 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+select,
+input[type="number"] {
+    padding: 10px;
+    margin: 0 5px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+select:focus,
+input[type="number"]:focus {
+    border-color: #5151e5;
+    outline: none;
+}
+
+button {
+    background: #5151e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+button:hover {
+    background: #4141c5;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+}
+
+#result {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
