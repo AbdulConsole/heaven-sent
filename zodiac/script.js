@@ -7,11 +7,12 @@ document.getElementById('calculate-btn').addEventListener('click', function() {
         return;
     }
 
-    fetch('zodiac.json')
+    fetch('zodiac_data.json')
         .then(response => response.json())
         .then(data => {
             const zodiacSign = getZodiacSign(day, month, data.zodiacSigns);
-            fetchZodiacDescription(zodiacSign);
+            const zodiacDescription = getZodiacDescription(zodiacSign, data.zodiacSigns);
+            showPopup(zodiacSign, zodiacDescription);
         })
         .catch(error => console.error('Error loading zodiac signs:', error));
 });
@@ -92,22 +93,15 @@ function isDateInRange(date, start, end) {
     return (date >= start && date <= end);
 }
 
-function fetchZodiacDescription(zodiacSign) {
-    fetch(`https://zodiacal.herokuapp.com/${zodiacSign.toLowerCase()}`)
-        .then(response => response.json())
-        .then(data => {
-            const description = data[0].general || "No description available.";
-            showPopup(`Your Zodiac Sign is: ${zodiacSign}\n\n${description}`, zodiacSign);
-        })
-        .catch(error => {
-            console.error('Error fetching zodiac description:', error);
-            showPopup(`Your Zodiac Sign is: ${zodiacSign}\n\nNo description available.`, zodiacSign);
-        });
+function getZodiacDescription(zodiacSign, zodiacSigns) {
+    const zodiac = zodiacSigns.find(z => z.sign === zodiacSign);
+    return zodiac ? zodiac.description : "No description available.";
 }
 
-function showPopup(message, zodiacSign) {
+function showPopup(zodiacSign, description) {
     const popup = document.getElementById('popup');
-    document.getElementById('result').textContent = message;
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `<strong>Your Zodiac Sign is:</strong> ${zodiacSign}<br><br>${description}`;
     document.getElementById('zodiac-name').textContent = zodiacSign;
     popup.style.display = "block";
 }
