@@ -1,13 +1,13 @@
 {
     "projects": [
         {
-            "name": "Your Zodiac Sign",
-            "thumbnail": "assets/images/thumbnail.jpeg",
+            "name": "Learn Zodiac Sign",
+            "thumbnail": "assets/images/thumbnail-1.jpeg",
             "url": "./zodiac"
         },
         {
             "name": "Astrological Constellation",
-            "thumbnail": "assets/images/thumbnail.jpeg",
+            "thumbnail": "assets/images/thumbnail-2.webp",
             "url": "./constellation"
         }
     ]
