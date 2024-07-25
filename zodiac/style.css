@@ -8,7 +8,7 @@ body {
     background: linear-gradient(45deg, rgba(252,254,255,1) 0%, rgba(218,227,237,1) 100%);
     font-family: 'Arial', sans-serif;
 }
-.nav {
+/*.nav {
   background: linear-gradient(135deg, rgba(252,254,255,1) 315%, rgba(218,227,237,1) 100%);
   width: 100vw;
   height: 50px;
@@ -32,7 +32,7 @@ body {
   font-size: 30px;
   font-weight: 500;
   color: #5151e5;
-}
+} */
 .container {
     text-align: center;
     background: white;
