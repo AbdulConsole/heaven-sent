@@ -3,7 +3,7 @@
         {
             "name": "Your Zodiac Sign",
             "thumbnail": "assets/images/thumbnail.jpeg",
-            "url": "http://github.com"
+            "url": "./zodiac"
         }
     ]
 }

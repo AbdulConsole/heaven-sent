@@ -28,6 +28,16 @@ document.getElementById('month').addEventListener('change', function() {
     adjustDayInputMax(this.value);
 });
 
+
+document.querySelector('.right').addEventListener(
+  'click', () => {
+        window.location.href = './..';
+  }
+);
+
+
+
+
 document.getElementById('read-more-btn').addEventListener('click', function() {
     const zodiacSign = document.getElementById('zodiac-name').textContent;
     if (zodiacSign) {
